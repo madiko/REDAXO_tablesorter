@@ -1,31 +1,41 @@
 /*************
 Default Theme
+
+überarbeitet madiko am 11.05.2018
+
 *************/
+
 /* overall */
 .tablesorter-default {
-	width: 100%;
+/*	width: 100%;
 	font: 12px/18px Arial, Sans-serif;
 	color: #333;
 	background-color: #fff;
 	border-spacing: 0;
 	margin: 10px 0 15px;
-	text-align: left;
+	text-align: left; 
+*/
 }
 
 /* header */
 .tablesorter-default th,
 .tablesorter-default thead td {
-	font-weight: bold;
+/*	font-weight: bold;
 	color: #000;
 	background-color: #fff;
 	border-collapse: collapse;
 	border-bottom: #ccc 2px solid;
 	padding: 0;
+*/
 }
+
 .tablesorter-default tfoot th,
 .tablesorter-default tfoot td {
+/*
 	border: 0;
+*/
 }
+
 .tablesorter-default .header,
 .tablesorter-default .tablesorter-header {
 	background-image: url(data:image/gif;base64,R0lGODlhFQAJAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAkAAAIXjI+AywnaYnhUMoqt3gZXPmVg94yJVQAAOw==);
@@ -33,24 +43,27 @@ Default Theme
 	background-repeat: no-repeat;
 	cursor: pointer;
 	white-space: normal;
-	padding: 4px 20px 4px 4px;
+	padding: 8px 20px 8px 8px; /*zurück auf REX-Standard gesetzt */
 }
+
 .tablesorter-default thead .headerSortUp,
 .tablesorter-default thead .tablesorter-headerSortUp,
 .tablesorter-default thead .tablesorter-headerAsc {
 	background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjI8Bya2wnINUMopZAQA7);
 	border-bottom: #000 2px solid;
 }
+
 .tablesorter-default thead .headerSortDown,
 .tablesorter-default thead .tablesorter-headerSortDown,
 .tablesorter-default thead .tablesorter-headerDesc {
 	background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjB+gC+jP2ptn0WskLQA7);
 	border-bottom: #000 2px solid;
 }
+
 .tablesorter-default thead .sorter-false {
 	background-image: none;
 	cursor: default;
-	padding: 4px;
+	padding: 5px;
 }
 
 /* tfoot */
@@ -63,10 +76,12 @@ Default Theme
 
 /* tbody */
 .tablesorter-default td {
+/*
 	background-color: #fff;
 	border-bottom: #ccc 1px solid;
 	padding: 4px;
 	vertical-align: top;
+*/
 }
 
 /* hovered row colors */
@@ -74,8 +89,10 @@ Default Theme
 .tablesorter-default tbody > tr:hover > td,
 .tablesorter-default tbody > tr.even:hover > td,
 .tablesorter-default tbody > tr.odd:hover > td {
+/*
 	background-color: #fff;
 	color: #000;
+*/
 }
 
 /* table processing indicator */
@@ -88,33 +105,55 @@ Default Theme
 
 /* Zebra Widget - row alternating colors */
 .tablesorter-default tr.odd > td {
+/*
 	background-color: #dfdfdf;
+*/
 }
+
 .tablesorter-default tr.even > td {
+/*
 	background-color: #efefef;
+*/
 }
 
 /* Column Widget - column sort colors */
 .tablesorter-default tr.odd td.primary {
+/*	
 	background-color: #bfbfbf;
+*/
 }
+
 .tablesorter-default td.primary,
 .tablesorter-default tr.even td.primary {
+/*	
 	background-color: #d9d9d9;
+*/
 }
+
 .tablesorter-default tr.odd td.secondary {
+/*	
 	background-color: #d9d9d9;
+*/
 }
+
 .tablesorter-default td.secondary,
 .tablesorter-default tr.even td.secondary {
+/*
 	background-color: #e6e6e6;
+*/
 }
+
 .tablesorter-default tr.odd td.tertiary {
+/*
 	background-color: #e6e6e6;
+*/
 }
+
 .tablesorter-default td.tertiary,
 .tablesorter-default tr.even td.tertiary {
+/*	
 	background-color: #f2f2f2;
+*/	
 }
 
 /* caption */
@@ -124,24 +163,30 @@ caption {
 
 /* filter widget */
 .tablesorter-default .tablesorter-filter-row {
+/*	
 	background-color: #eee;
+*/	
 }
+
 .tablesorter-default .tablesorter-filter-row td {
-	background-color: #eee;
+/*	background-color: #eee;
 	border-bottom: #ccc 1px solid;
 	line-height: normal;
+*/
 	text-align: center; /* center the input */
 	-webkit-transition: line-height 0.1s ease;
 	-moz-transition: line-height 0.1s ease;
 	-o-transition: line-height 0.1s ease;
 	transition: line-height 0.1s ease;
 }
+
 /* optional disabled input styling */
 .tablesorter-default .tablesorter-filter-row .disabled {
 	opacity: 0.5;
 	filter: alpha(opacity=50);
 	cursor: not-allowed;
 }
+
 /* hidden filter row */
 .tablesorter-default .tablesorter-filter-row.hideme td {
 	/*** *********************************************** ***/
@@ -153,6 +198,7 @@ caption {
 	line-height: 0;
 	cursor: pointer;
 }
+
 .tablesorter-default .tablesorter-filter-row.hideme * {
 	height: 1px;
 	min-height: 0;
@@ -163,6 +209,7 @@ caption {
 	opacity: 0;
 	filter: alpha(opacity=0);
 }
+
 /* filters */
 .tablesorter-default input.tablesorter-filter,
 .tablesorter-default select.tablesorter-filter {
@@ -181,6 +228,7 @@ caption {
 	-o-transition: height 0.1s ease;
 	transition: height 0.1s ease;
 }
+
 /* rows hidden by filtering (needed for child rows) */
 .tablesorter .filtered {
 	display: none;
